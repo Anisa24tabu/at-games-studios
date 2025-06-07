@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AT Games Studios - Newsletter Signup</title>
+    <!--
+        Document: AT Games Studios - Newsletter Signup
+        Description: This page contains a form that is used to sign up for AT Games Studios Newsletter.
+        Author: Anisa Tabassum 
+        Date: May 02, 2025
+    -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <script src="js/newsletter.js" defer></script>
+</head>
+
+<body onload="atGamesWelcome()">
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li class="logo-container">
+                    <a href="./index.html" class="logo-image">
+                        <img src="./images/at-games-logo.jpg" alt="AT Games Studios" class="logo">
+                    </a>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ATabassum_A4_about.html">About Me</a></li>
+                <li><a href="ATabassum_A4_resume.html">Resume</a></li>
+                <li><a href="ATabassum_A4_web_skills.html">Web Skills</a></li>
+                <li><a href="ATabassum_A4_3d_model.html">3D Modeling</a></li>
+                <li><a href="ATabassum_A4_animation.html">Animation</a></li>
+                <li><a href="ATabassum_A4_ui_ux.html">UI/UX</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form-container">
+        <section class="form-section">
+            <h2 class="section-title">AT Games Studios Newsletter</h2>
+            <p class="required-note">* Indicates required fields</p>
+
+            <form id="gamingNewsletter" method="post" action="#" onsubmit="validateForm(event)">
+                <!-- Name Fields -->
+                <div class="field">
+                    <label for="firstName">First Name <span class="required">*</span></label>
+                    <input type="text" id="firstName" name="firstName" maxlength="60">
+                </div>
+
+                <div class="field">
+                    <label for="lastName">Last Name <span class="required">*</span></label>
+                    <input type="text" id="lastName" name="lastName" maxlength="60">
+                </div>
+
+                <!-- Email -->
+                <div class="field">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" maxlength="60">
+                </div>
+
+                <!-- Age Group -->
+                <div class="field">
+                    <p>Age Group</p>
+                    <div class="options-grid">
+                        <label><input type="radio" name="age" value="15-25"> 15-25</label>
+                        <label><input type="radio" name="age" value="26-35"> 26-35</label>
+                        <label><input type="radio" name="age" value="36-45"> 36-45</label>
+                        <label><input type="radio" name="age" value="46-55"> 46-55</label>
+                        <label><input type="radio" name="age" value="55+"> 55+</label>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="field">
+                    <p>Interested Services</p>
+                    <div class="options-grid">
+                        <label><input type="checkbox" name="service" value="game-dev"> Game Development</label>
+                        <label><input type="checkbox" name="service" value="esports"> Esports Events</label>
+                        <label><input type="checkbox" name="service" value="vr"> VR Experiences</label>
+                        <label><input type="checkbox" name="service" value="merch"> Gaming Merchandise</label>
+                        <label><input type="checkbox" name="service" value="beta"> Beta Testing</label>
+                    </div>
+                </div>
+
+                <!-- Preferences -->
+                <div class="field">
+                    <label for="comments">Gaming Preferences</label>
+                    <textarea id="comments" name="comments" rows="3" cols="60"
+                        placeholder="Tell us about your favorite game genres..."></textarea>
+                </div>
+
+                <!-- Buttons -->
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2025 Anisa Tabassum. All rights reserved. Contact me at:
+            <a href="mailto:email@example.com">email@example.com</a>
+        </p>
+    </footer>
+</body>
+
+</html>
